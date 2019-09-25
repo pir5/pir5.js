@@ -1,24 +1,23 @@
 {
-  "name": "pir5",
+  "name": "pir5.js",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "My splendiferous Nuxt.js project",
+  "author": "takumakume",
+  "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build --no-lock",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/pir5/pir5.js.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pir5/pir5.js/issues"
-  },
-  "homepage": "https://github.com/pir5/pir5.js#readme",
   "dependencies": {
-    "nuxt": "^2.9.2"
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0",
+    "vue-jest": "^4.0.0-0"
   }
 }
