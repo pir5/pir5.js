@@ -38,8 +38,3 @@ nodenv-info:
 	@echo "$(INFO_COLOR)==> 🍀 $(RESET)$(BOLD)Showing node and npm information$(RESET)"
 	@eval "$$(anyenv init - sh)" && type node && node -v
 	@eval "$$(anyenv init - sh)" && type npm && npm -v
-
-npm:
-	@echo "$(INFO_COLOR)==> 🍿 $(RESET)$(BOLD)Installing node packages$(RESET)"
-	@git checkout package-lock.json
-	@eval "$$(anyenv init - sh)" && npm ci -s
